@@ -29,9 +29,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dist-files
-          path: |
-            dist-files
-            package.json
+          path: dist
+          # path: |
+          #   dist-files
+          #   package.json
 
   deploy:
     needs: build
